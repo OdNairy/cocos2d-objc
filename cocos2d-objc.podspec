@@ -94,6 +94,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "cocos2d/*.{h,m,c}", "cocos2d/Support/*.{h,m,c}", "cocos2d/Platforms/**/*.{h,m,c}", "cocos2d-ui/**/*.{h,m,c}"
+  spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -133,7 +134,7 @@ Pod::Spec.new do |spec|
   #  you can include multiple dependencies to ensure it works.
 
   spec.requires_arc = true
-  # spec.header_mappings_dir = "cocos2d"
+  spec.header_mappings_dir = "cocos2d"
   
   spec.dependency "ObjectAL-for-iPhone"#, "~> 1.0"
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
